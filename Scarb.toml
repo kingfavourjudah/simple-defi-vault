@@ -1,0 +1,16 @@
+[package]
+name = "havilah_vault"
+version = "0.1.0"
+edition = "2024_07"
+
+[dependencies]
+starknet = "2.9.2"
+
+[dev-dependencies]
+snforge_std = "0.56.0"
+
+[[target.starknet-contract]]
+build-external-contracts = ["havilah_vault::mock_erc20::MockERC20"]
+
+[scripts]
+test = "snforge test"

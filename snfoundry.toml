@@ -1,0 +1,7 @@
+# Starknet Foundry configuration file
+# For devnet deployment using predeployed account (seed 0)
+
+[sncast.devnet]
+url = "http://127.0.0.1:5050"
+account = "devnet_account"
+accounts-file = "accounts.json"
